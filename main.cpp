@@ -21,6 +21,7 @@ GLfloat x_moon = -0.7f;
 //used para hindi "stretched" yung maging output
 //basically i t-times lang naten all y-values by the aspect ratio(1920/1080) of most screens
 float ratio = 1.78f;// 1920/1080;
+float r = 1.78f;
 	
 using namespace std;
 void display();
@@ -77,6 +78,63 @@ void display(){
 	}
 	deg = 0;
 	glEnd();
+
+  // BIG STARS
+		glPointSize(5.0);
+		glBegin(GL_POINTS); 
+		
+			glColor3f(1.0, 1.0, 1.0);
+			glVertex2f(0.21*r, 0.20*r);
+			glVertex2f(0.20*r, -0.24*r);
+			glVertex2f(-0.28*r, 0.19*r);
+			glVertex2f(-0.20*r, -0.20*r);
+			glVertex2f(0.52*r, 0.5*r);
+			glVertex2f(0.5*r, -0.54*r);
+			glVertex2f(-0.54*r, 0.53*r);
+			glVertex2f(-0.48*r, 0.0*r);
+			glVertex2f(0.3*r, 0.5*r);
+			glVertex2f(0.5*r, 0.3*r);
+			glVertex2f(0.0*r, 0.3*r);
+			glVertex2f(0.0*r, -0.3*r);
+			glVertex2f(0.35*r, 0.0*r);
+			glVertex2f(0.0*r, 0.0*r);
+			glVertex2f(-0.19*r, -0.1*r);
+			glVertex2f(-0.5*r, -0.5*r);
+			glVertex2f(-0.35*r, -0.46*r);
+			glVertex2f(0.3*r, -0.33*r);
+			glVertex2f(0.1*r, -0.48*r);
+			glVertex2f(-0.36*r, 0.43*r);
+			glVertex2f(0.35*r, -0.21*r);
+			glVertex2f(-0.35*r, -0.21*r);
+			glVertex2f(-0.1*r, -0.53*r);
+			glVertex2f(-0.05*r, 0.55*r);
+		
+		glEnd();
+		
+	// SMALL STARS
+		glPointSize(2.0);
+		glBegin(GL_POINTS); 
+		
+		glColor3f(1.0, 1.0, 1.0);
+		
+			glVertex2f(-0.1*r, 0.1*r);
+			glVertex2f(0.1*r, 0.3*r);
+			glVertex2f(0.0*r, 0.15*r);
+			glVertex2f(0.15*r, 0.0*r);
+			glVertex2f(-0.04*r, -0.1*r);
+			glVertex2f(-0.47*r, -0.33*r);
+			glVertex2f(-0.2*r, -0.4*r);
+			glVertex2f(-0.3*r, 0.0*r);
+			glVertex2f(-0.2*r, 0.4*r);
+			glVertex2f(0.4*r, -0.4*r);
+			glVertex2f(0.5*r, -0.1*r);
+			glVertex2f(0.23*r, -0.36*r);
+			glVertex2f(0.13*r, -0.24*r);
+			glVertex2f(0.37*r, 0.31*r);
+			glVertex2f(-0.4*r, 0.2*r);
+			glVertex2f(-0.53*r, 0.13*r);
+		
+		glEnd();
 	
 	glFlush();
 }
