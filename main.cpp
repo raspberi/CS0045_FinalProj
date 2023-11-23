@@ -387,7 +387,7 @@ void animate(int value){
 //		mappedVertices[726+i+2] = (cos_venus * tempZ_venus) - (sin_venus * tempX_venus);
 //		mappedVertices[1452+i] = ((cos_earth * tempX_earth) + (sin_earth * tempZ_earth));
 //		mappedVertices[1452+i+2] = (cos_earth * tempZ_earth) - (sin_earth * tempX_earth);
-//		mappedVertices[2178+i] = (((cos_moon * x_diff) + (sin_moon * z_diff)) * height_ratio) + x_earthCore;
+//		mappedVertices[2178+i] = ((cos_moon * x_diff) + (sin_moon * z_diff)) + x_earthCore;
 //		mappedVertices[2178+i+2] = ((cos_moon * z_diff) - (sin_moon * x_diff)) + z_earthCore;
 //	}
 	
